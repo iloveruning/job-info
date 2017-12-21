@@ -4,8 +4,8 @@
 }
 
 body{
-	font-size: 4px;
-	background-color: #f5f5f5
+	font-size: 13px;
+	/*background-color: #f5f5f5*/
 }
 
 #top{
@@ -32,7 +32,7 @@ body{
 }
 
 .list-group .title{
-	font-size: 5px;
+	font-size: 13px;
 	padding-right: 8px
 }
 
@@ -43,7 +43,7 @@ body{
 }
 
 #allData .line{
-	line-height: 32px
+	line-height: 40px
 }
 
 #allData .col-xs-6{
@@ -52,14 +52,16 @@ body{
 	font-weight: 700;
 	font-size: 17px;
 	font-family: 楷体;
-	margin-left: -8px
+	margin-left: -8px;
+	margin-top: 4px
 }
 
 .list-body{
-	font-style: 5px;
+	font-style: 13px;
 	text-align: center;
 	padding-left: 5px;
-	padding-right: 5px
+	padding-right: 5px;
+	margin-bottom: 5px
 }
 
 .navbar-header{
@@ -98,7 +100,7 @@ body{
 	margin-left: -5px;
 	font-family: 楷体;
 	font-weight: 700;
-	    font-size: 20px;
+	font-size: 20px;
 }
 
 #con .panel-body img{

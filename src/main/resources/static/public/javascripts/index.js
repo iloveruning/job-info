@@ -59,8 +59,8 @@ function getAllData(index){
 				let res=data.data.list;
 				let html=""
 				for(let i of res){
-					if (i.company.length>5) {
-						i.company=i.company.slice(0,5)+'...'
+					if (i.company.length>6) {
+						i.company=i.company.slice(0,6)+'...'
 					}
 					if (i.place.length>5) {
 						i.place=i.place.slice(0,5)+'...'
@@ -103,8 +103,8 @@ function getOpenData(index){
 				let res=data.data.list;
 				let html=""
 				for(let i of res){
-					if (i.company.length>5) {
-						i.company=i.company.slice(0,5)+'...'
+					if (i.company.length>6) {
+						i.company=i.company.slice(0,6)+'...'
 					}
 					if (i.place.length>5) {
 						i.place=i.place.slice(0,5)+'...'
