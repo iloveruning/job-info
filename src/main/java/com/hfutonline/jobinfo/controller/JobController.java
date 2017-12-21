@@ -28,10 +28,13 @@ public class JobController {
         this.jobMapper = jobMapper;
     }
 
+
+
+
     @GetMapping("/info/{id}")
     @CrossOrigin(origins = "*",methods = RequestMethod.GET)
     public Result getJobInfo(@PathVariable(value = "id") String id) {
-        String info = jobService.getJobInfo(id);
+        Job info = jobService.getJobInfo(id);
         if (info == null) {
             return ResultUtil.fail("id错误");
         }

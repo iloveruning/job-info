@@ -12,7 +12,7 @@ public interface JobService {
 
     PageInfo<Job> getJobs(int pageNum);
 
-    String getJobInfo(String id);
+    Job getJobInfo(String id);
 
     PageInfo<Job> getEnableJobs(int pageNum);
 }

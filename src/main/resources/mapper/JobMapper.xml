@@ -60,5 +60,11 @@
     </select>
 
 
+    <select id="findById" resultType="com.hfutonline.jobinfo.entity.Job">
+        SELECT click,place,time date,company,info FROM job
+        WHERE id=#{id}
+    </select>
+
+
 
 </mapper>

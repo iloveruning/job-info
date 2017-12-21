@@ -42,8 +42,8 @@ public class JobServiceImpl implements JobService {
 
     @Override
     @Cacheable(value = "info",key = "'getJobInfo'+#id")
-    public String getJobInfo(String id) {
-        return jobMapper.findInfoById(id);
+    public Job getJobInfo(String id) {
+        return jobMapper.findById(id);
     }
 
     @Override

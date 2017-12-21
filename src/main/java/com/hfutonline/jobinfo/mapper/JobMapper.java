@@ -34,4 +34,6 @@ public interface JobMapper {
     List<Job> findJobs();
 
     List<Job> findEnableJobs();
+
+    Job findById(@Param("id") String id);
 }
