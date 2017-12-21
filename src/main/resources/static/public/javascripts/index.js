@@ -2,9 +2,9 @@ window.onload=function(){
 	let page =window.location.search.slice(1)
 	// let page=1;
 	$("#currentPage").html(page);
-	if(getCookie('haveOpen')==1){
+	if(getCookie('haveOpen')==0){
 		getAllData(page)
-	}else if(getCookie('haveOpen')==0){
+	}else if(getCookie('haveOpen')==1){
 		getOpenData(page)
 	}else{
 		setCookie('haveOpen',1,1)
