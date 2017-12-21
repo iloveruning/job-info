@@ -32,7 +32,7 @@ public class JobController {
 
 
     @GetMapping("/info/{id}")
-    @CrossOrigin(origins = "*",methods = RequestMethod.GET)
+    //@CrossOrigin(origins = "*",methods = RequestMethod.GET)
     public Result getJobInfo(@PathVariable(value = "id") String id) {
         Job info = jobService.getJobInfo(id);
         if (info == null) {
@@ -42,7 +42,7 @@ public class JobController {
     }
 
     @GetMapping("/{pageNum}")
-    @CrossOrigin(origins = "*",methods = RequestMethod.GET)
+    //@CrossOrigin(origins = "*",methods = RequestMethod.GET)
     public Result getJobs(@PathVariable(value = "pageNum") int pageNum) {
         if (pageNum <= 0) {
             pageNum = 1;
@@ -72,7 +72,7 @@ public class JobController {
 
 
     @GetMapping("/enable/{pageNum}")
-    @CrossOrigin(origins = "*",methods = RequestMethod.GET)
+    //@CrossOrigin(origins = "*",methods = RequestMethod.GET)
     public Result getEnableJobs(@PathVariable(value = "pageNum") int pageNum) {
         if (pageNum <= 0) {
             pageNum = 1;
