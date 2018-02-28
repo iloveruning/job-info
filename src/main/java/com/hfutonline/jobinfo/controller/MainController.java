@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author chenliangliang
- * @date: 2017/12/21
+ * @date 2017/12/21
  */
 @Controller
-//@RequestMapping(value = "/")
 public class MainController {
 
     @GetMapping("/index")

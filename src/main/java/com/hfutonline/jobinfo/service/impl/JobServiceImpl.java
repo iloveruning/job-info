@@ -30,7 +30,7 @@ public class JobServiceImpl implements JobService {
     @Override
     @Cacheable(value = "read",key = "'getJobs_'+#pageNum")
     public PageInfo<Job> getJobs(int pageNum) {
-        System.out.println("pageNum: "+pageNum);
+
         PageHelper.startPage(pageNum, 20);
         List<Job> jobs = jobMapper.findJobs();
         Date date = new Date();

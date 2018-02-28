@@ -1,5 +1,6 @@
 package com.hfutonline.jobinfo.config;
 
+import net.sf.ehcache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
@@ -17,8 +18,8 @@ public class CacheConfiguration {
 
 
     @Bean
-    public EhCacheCacheManager ehCacheCacheManager(EhCacheManagerFactoryBean ehCacheManagerFactoryBean){
-        return new EhCacheCacheManager(ehCacheManagerFactoryBean.getObject());
+    public EhCacheCacheManager ehCacheCacheManager(CacheManager cacheManager){
+        return new EhCacheCacheManager(cacheManager);
 
 
     }
