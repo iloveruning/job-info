@@ -102,7 +102,7 @@ public class Crawler {
                             case 2:
                                 job.setPlace(text);
                                 break;
-                            case 3:
+                            case 4:
                                 job.setClick(text);
                                 break;
                             default:
